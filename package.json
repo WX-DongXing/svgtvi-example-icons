@@ -1,0 +1,34 @@
+{
+  "name": "svgtvi-example-icons",
+  "version": "0.1.0",
+  "author": "dong.xing@outlook.com",
+  "description": "svgtvi example icons components for vue3",
+  "homepage": "https://github.com/WX-DongXing/svgtvi-example-icons.git",
+  "repository": "https://github.com/WX-DongXing/svgtvi-example-icons.git",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "node src/index.mjs"
+  },
+  "keywords": [
+    "svgtvi",
+    "icons",
+    "example",
+    "vue"
+  ],
+  "files": [
+    "dist/feather",
+    "dist/twoTone"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "devDependencies": {
+    "@svgtvi/core": "^0.1.0"
+  }
+}
