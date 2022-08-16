@@ -7,8 +7,6 @@
   "repository": "https://github.com/WX-DongXing/svgtvi-example-icons.git",
   "license": "MIT",
   "type": "commonjs",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
   "scripts": {
     "build": "node src/index.mjs"
   },
@@ -23,9 +21,13 @@
     "dist/twoTone"
   ],
   "exports": {
-    ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+    "feather": {
+      "import": "./dist/feather/index.mjs",
+      "require": "./dist/feather/index.js"
+    },
+    "twoTone": {
+      "import": "./dist/twoTone/index.mjs",
+      "require": "./dist/twoTone/index.js"
     }
   },
   "devDependencies": {
