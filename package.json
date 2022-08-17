@@ -1,6 +1,6 @@
 {
   "name": "svgtvi-example-icons",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "dong.xing@outlook.com",
   "description": "svgtvi example icons components for vue3",
   "homepage": "https://github.com/WX-DongXing/svgtvi-example-icons.git",
@@ -14,20 +14,24 @@
     "svgtvi",
     "icons",
     "example",
-    "vue"
+    "vue",
+    "feather",
+    "twoTone"
   ],
   "files": [
     "dist/feather",
     "dist/twoTone"
   ],
   "exports": {
-    "feather": {
-      "import": "./dist/feather/index.mjs",
-      "require": "./dist/feather/index.js"
+    "./feather": {
+      "import": "./dist/feather/esm/index.js",
+      "require": "./dist/feather/index.js",
+      "types": "./dist/feather/index.d.ts"
     },
-    "twoTone": {
-      "import": "./dist/twoTone/index.mjs",
-      "require": "./dist/twoTone/index.js"
+    "./twoTone": {
+      "import": "./dist/twoTone/esm/index.js",
+      "require": "./dist/twoTone/index.js",
+      "types": "./dist/twoTone/index.d.ts"
     }
   },
   "devDependencies": {
